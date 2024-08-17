@@ -1,9 +1,7 @@
 # Frontend Mentor - FAQ accordion card solution
-
-This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This project is a solution to the [FAQ Accordion Card Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). The challenge inspired the design and functionality of this accordion card, focusing on creating an engaging and interactive user interface.
 
 ## Table of contents
-
 
 - [Frontend Mentor - FAQ accordion card solution](#frontend-mentor---faq-accordion-card-solution)
   - [Table of contents](#table-of-contents)
@@ -14,7 +12,9 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
   - [My process](#my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
-    - [Continued development](#continued-development)
+      - [Unveiling the Power of the `<details>` Tag for Interactive FAQs](#unveiling-the-power-of-the-details-tag-for-interactive-faqs)
+      - [Using the `<picture>` Tag](#using-the-picture-tag)
+      - [CSS Positioning](#css-positioning)
     - [Useful resources](#useful-resources)
   - [Author](#author)
   - [Acknowledgments](#acknowledgments)
@@ -31,20 +31,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Desktop Solution Preview](./solution//desktop.png)
+<img src="./solution/mobile.png" style="width:500px" alt="Mobile Solution Preview">
 
 ### Links
 
-- Solution URL: [FAQ accordion card Repo](https://github.com/Rajiv-0920/FAQ-accordion-card)
-- Live Site URL: [Live Preview of FAQ accordion card](https://Rajiv-0920.github.io/FAQ-accordion-card)
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
@@ -58,51 +51,62 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+#### Unveiling the Power of the `<details>` Tag for Interactive FAQs
 
-To see how you can add code snippets, see below:
+Recently, I explored the powerful `<details>` HTML tag, which allows for creating interactive, collapsible content sections on a webpage. This tag is especially useful for FAQs, where users can click to reveal or hide additional information as needed, making the content more dynamic and user-friendly.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<details>
+    <summary class="faq-question">...</summary>
+    <p>...</p>
+</details>
 ```
+
+#### Using the `<picture>` Tag
+
+In this project, I learned how to use the <picture> tag in HTML to display different images based on the screen resolution. This approach is useful for serving appropriate images for various device sizes, improving both performance and user experience.
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+<picture>
+    <!-- Image for screens wider than 1050px -->
+    <source media="(min-width: 1050px)" srcset="desktop.jpg">
+    <!-- Default image for smaller screens -->
+    <img src="mobile.jpg" alt="..">
+</picture>
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+#### CSS Positioning
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I have learned how to use positioning in CSS to control the placement and layering of elements on a webpage. CSS positioning allows you to specify how elements should be positioned within their containing element or the viewport.
 
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+```css
+.accordion::before {
+    content: "";
+    position: absolute;
+    top: 200px;
+    left: -80px;
+}
+```
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [W3Schools](https://www.w3schools.com) - This site helped me learn about the `<details>` tag in CSS in detail. I really liked the clear explanations and practical examples provided, which made understanding and applying the tag much easier.
+- [CSS Scan](https://getcssscan.com/css-box-shadow-examples) - Check out CSS Box Shadow Examples for a variety of ready-to-use CSS box-shadow effects to enhance your designs.
+- [YahooBaba](https://www.yahoobaba.net) - The video content on YahooBaba was incredibly helpful. It provided a clear and practical demonstration of CSS techniques, particularly on background properties and various other concepts. This resource was valuable for visual learners and greatly assisted in my understanding and application of these CSS properties.
+- [ChatGPT](https://www.openai.com/chatgpt) - This is an amazing tool that provided tailored explanations and practical advice on CSS concepts. It helped me finally understand complex topics and apply them effectively. I'd recommend it to anyone still learning these concepts.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Rajiv Kumar 🚀](https://rajiv-0920.github.io/Portfolio/)
+- Frontend Mentor - [@rajiv-0920](https://www.frontendmentor.io/profile/rajiv-0920)
+- Twitter - [@rajiv_0920](https://www.twitter.com/rajiv_0920)
+- Linkedin - [@rajiv-0920](https://www.linkedin.com/in/rajiv-0920/)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I’d like to extend my gratitude to the following for their invaluable contributions to this project:
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- [W3Schools](https://www.w3schools.com) - Their detailed tutorials and explanations were instrumental in understanding various CSS properties and techniques.
+- [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/faq-accordion-card-HyQU0HoN9): This solution was incredibly helpful for aligning the 3D box. The approach and practical examples provided inspiration and guidance for achieving the desired alignment and visual effects.
+
+Thank you for the guidance and inspiration that greatly contributed to the success of this project!
