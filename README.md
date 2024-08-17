@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [FAQ accordion card Repo](https://github.com/Rajiv-0920/FAQ-accordion-card)
+- Live Site URL: [Preview of FAQ accordion card](https://Rajiv-0920.github.io/FAQ-accordion-card)
 
 ## My process
 
