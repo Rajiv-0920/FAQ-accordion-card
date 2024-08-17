@@ -64,7 +64,7 @@ Recently, I explored the powerful `<details>` HTML tag, which allows for creatin
 
 #### Using the `<picture>` Tag
 
-In this project, I learned how to use the <picture> tag in HTML to display different images based on the screen resolution. This approach is useful for serving appropriate images for various device sizes, improving both performance and user experience.
+In this project, I learned how to use the `<picture>` tag in HTML to display different images based on the screen resolution. This approach is useful for serving appropriate images for various device sizes, improving both performance and user experience.
 
 ```css
 <picture>
